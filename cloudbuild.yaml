@@ -1,0 +1,9 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'us-central1-docker.pkg.dev/burner-aftansar/batch-app-repo/batch-application', '.']
+
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'us-central1-docker.pkg.dev/burner-aftansar/batch-app-repo/batch-application']
+
+images:
+  - 'us-central1-docker.pkg.dev/burner-aftansar/batch-app-repo/batch-application'

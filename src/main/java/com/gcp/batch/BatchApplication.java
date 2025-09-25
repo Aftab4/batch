@@ -18,8 +18,11 @@ public class BatchApplication {
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 		String formattedStartTime = startTime.format(formatter);
 
-		// CHANGE: Log the start time
-		System.out.println("Batch Application started at: " + formattedStartTime);
+		// CHANGE: Define the region
+		String region = "us-central1"; // CHANGE: Set your region here
+
+		// CHANGE: Log the start time and region
+		System.out.println("Batch Application started at: " + formattedStartTime + " in region: " + region);
 
 		SpringApplication.run(BatchApplication.class, args);
 	}

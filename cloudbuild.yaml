@@ -14,7 +14,7 @@ steps:
       - 'beta'
       - 'run'
       - 'jobs'
-      - 'update'
+      - 'deploy'
       - 'batch-daily-job'
       - '--image=us-central1-docker.pkg.dev/burner-aftansar/batch-app/batch-application:$COMMIT_SHA'
       - '--region=us-central1'

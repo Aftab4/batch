@@ -21,3 +21,6 @@ steps:
 
 images:
   - 'us-central1-docker.pkg.dev/burner-aftansar/batch-app/batch-application:$COMMIT_SHA'
+
+options:
+  logging: CLOUD_LOGGING_ONLY
